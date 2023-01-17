@@ -39,7 +39,7 @@ const items = [
     title: "Settings",
   },
   {
-    href: "./api/auth/login",
+    href: "/api/auth/login",
     icon: <LockIcon fontSize="small" />,
     title: "Login",
   },
