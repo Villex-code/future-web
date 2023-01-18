@@ -51,7 +51,7 @@ const Clients = () => {
       <Box m="20px">
         <Box
           m="40px 0 0 0"
-          height="60vh"
+          height="80vh"
           sx={{
             "& .MuiDataGrid-root": {
               border: "none",
@@ -71,7 +71,7 @@ const Clients = () => {
             },
             "& .MuiDataGrid-footerContainer": {
               borderTop: "none",
-              backgroundColor: "#97ea85",
+              backgroundColor: "red",
             },
             "& .MuiCheckbox-root": {
               color: `"#b7ebde" !important`,
