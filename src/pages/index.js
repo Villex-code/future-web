@@ -14,7 +14,7 @@ import { useUser } from "@auth0/nextjs-auth0/client";
 const Page = () => (
   <>
     <Head>
-      <title>Dashboard | Material Kit</title>
+      <title>Dashboard | FuturizeAI</title>
     </Head>
     <Box
       component="main"

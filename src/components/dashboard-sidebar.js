@@ -7,6 +7,7 @@ import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import { ChartBar as ChartBarIcon } from "../icons/chart-bar";
 import { Cog as CogIcon } from "../icons/cog";
 import { Lock as LockIcon } from "../icons/lock";
+import { Unlock } from "../icons/unlock";
 import { Selector as SelectorIcon } from "../icons/selector";
 import { ShoppingBag as ShoppingBagIcon } from "../icons/shopping-bag";
 import { User as UserIcon } from "../icons/user";
@@ -25,7 +26,7 @@ const items = [
   {
     href: "/customers",
     icon: <UsersIcon fontSize="small" />,
-    title: "Customerssss",
+    title: "Customers",
   },
 
   {
@@ -40,7 +41,7 @@ const items = [
   },
   {
     href: "/api/auth/login",
-    icon: <LockIcon fontSize="small" />,
+    icon: <Unlock fontSize="small" />,
     title: "Login",
   },
   {
@@ -109,10 +110,10 @@ export const DashboardSidebar = (props) => {
             >
               <div>
                 <Typography color="inherit" variant="subtitle1">
-                  Acme Inc
+                  Futurize AI
                 </Typography>
                 <Typography color="neutral.400" variant="body2">
-                  Your tier : Premium
+                  Access : Premium
                 </Typography>
               </div>
               <SelectorIcon
@@ -147,7 +148,7 @@ export const DashboardSidebar = (props) => {
             Need more features?
           </Typography>
           <Typography color="neutral.500" variant="body2">
-            Check out our Pro solution template.
+            Mail us and we will include it!
           </Typography>
           <Box
             sx={{
@@ -162,7 +163,7 @@ export const DashboardSidebar = (props) => {
           >
             <img alt="Go to pro" src="/static/images/sidebar_pro.png" />
           </Box>
-          <NextLink href="https://material-kit-pro-react.devias.io/" passHref>
+          <NextLink href="mailto:videlik@gmail.com" passHref>
             <Button
               color="secondary"
               component="a"
@@ -171,7 +172,7 @@ export const DashboardSidebar = (props) => {
               sx={{ mt: 2 }}
               variant="contained"
             >
-              Pro Live Preview
+              Click here to contact us :
             </Button>
           </NextLink>
         </Box>

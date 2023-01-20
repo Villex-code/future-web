@@ -24,7 +24,7 @@ const App = (props) => {
   return (
     <CacheProvider value={emotionCache}>
       <Head>
-        <title>Material Kit Pro</title>
+        <title>FuturizeAI</title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <UserProvider>

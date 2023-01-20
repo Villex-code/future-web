@@ -9,7 +9,7 @@ import Clients from "../components/customer/Clients";
 const Page = () => (
   <>
     <Head>
-      <title>Customers | Material Kit</title>
+      <title>Customers | FuturizeAI</title>
     </Head>
     <Box
       component="main"

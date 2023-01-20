@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { useUser } from "@auth0/nextjs-auth0/client";
+import mapIcons from "./data/mapping";
 
 import {
   GridComponent,
@@ -63,15 +64,15 @@ const Clients = () => {
               color: "#94e2cd",
             },
             "& .MuiDataGrid-columnHeaders": {
-              backgroundColor: "#08679d",
+              backgroundColor: "#51abcb",
               borderBottom: "none",
             },
             "& .MuiDataGrid-virtualScroller": {
-              backgroundColor: "#cfefec",
+              backgroundColor: "#d3eaf2",
             },
             "& .MuiDataGrid-footerContainer": {
               borderTop: "none",
-              backgroundColor: "red",
+              backgroundColor: "#e9f5f9",
             },
             "& .MuiCheckbox-root": {
               color: `"#b7ebde" !important`,
