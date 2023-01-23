@@ -57,7 +57,7 @@ const Clients = () => {
     { field: "Check In", headerName: "Check In" },
     { field: "Check Out", headerName: "Check Out" },
     { field: "Total Amount", headerName: "Total Amount" },
-    { field: "_id", headerName: "_id" },
+    { field: "_id", headerName: "Lookup _id" },
   ];
 
   return (
