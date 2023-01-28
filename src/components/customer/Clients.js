@@ -52,7 +52,7 @@ const Clients = () => {
 
   const columns = [
     { field: "Reservation ID", headerName: "Reservation ID" },
-    { field: "Source", headerName: "Platform", flex: 1 },
+    { field: "Source", headerName: "Platform" },
     { field: "Guest", headerName: "Guest" },
     { field: "Check In", headerName: "Check In" },
     { field: "Check Out", headerName: "Check Out" },
@@ -99,7 +99,12 @@ const Clients = () => {
             rows={data}
             getRowId={(row) => row._id}
             columns={columns}
-            components={{ Toolbar: GridToolbar }}
+            components={{
+              Toolbar: GridToolbar,
+              Columns: undefined,
+              Filters: undefined,
+              Density: undefined,
+            }}
           />
         </Box>
       </Box>

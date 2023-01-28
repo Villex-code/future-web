@@ -164,15 +164,8 @@ export const DashboardSidebar = (props) => {
             <img alt="Go to pro" src="/static/images/sidebar_pro.png" />
           </Box>
           <NextLink href="mailto:videlik@gmail.com" passHref>
-            <Button
-              color="secondary"
-              component="a"
-              endIcon={<OpenInNewIcon />}
-              fullWidth
-              sx={{ mt: 2 }}
-              variant="contained"
-            >
-              Click here to contact us :
+            <Button color="secondary" component="a" fullWidth sx={{ mt: 2 }} variant="contained">
+              Click here to contact us
             </Button>
           </NextLink>
         </Box>

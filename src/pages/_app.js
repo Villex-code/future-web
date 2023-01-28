@@ -8,6 +8,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import { AuthConsumer, AuthProvider } from "../contexts/auth-context";
 import { createEmotionCache } from "../utils/create-emotion-cache";
 import { registerChartJs } from "../utils/register-chart-js";
+import { MyUserProvider } from "../contexts/UserContext";
 import { theme } from "../theme";
 import { UserProvider, useUser } from "@auth0/nextjs-auth0/client";
 import "tailwindcss/tailwind.css";
@@ -28,18 +29,20 @@ const App = (props) => {
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <UserProvider>
-        <LocalizationProvider dateAdapter={AdapterDateFns}>
-          <ThemeProvider theme={theme}>
-            <CssBaseline />
-            <AuthProvider>
-              <AuthConsumer>
-                {(auth) =>
-                  auth.isLoading ? <Fragment /> : getLayout(<Component {...pageProps} />)
-                }
-              </AuthConsumer>
-            </AuthProvider>
-          </ThemeProvider>
-        </LocalizationProvider>
+        <MyUserProvider>
+          <LocalizationProvider dateAdapter={AdapterDateFns}>
+            <ThemeProvider theme={theme}>
+              <CssBaseline />
+              <AuthProvider>
+                <AuthConsumer>
+                  {(auth) =>
+                    auth.isLoading ? <Fragment /> : getLayout(<Component {...pageProps} />)
+                  }
+                </AuthConsumer>
+              </AuthProvider>
+            </ThemeProvider>
+          </LocalizationProvider>
+        </MyUserProvider>
       </UserProvider>
     </CacheProvider>
   );
